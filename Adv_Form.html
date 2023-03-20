@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Adv_form.css"
+    <title>form1</title>
+</head>
+<body>
+    <div class="main">
+    <div class="register">
+        <h2>Register Form</h2>
+        <form id="register" method="post">
+        <fieldset>
+            <legend>Form</legend>
+            Name:
+            <input type="text" placeholder="Enter your Name..." name="name" required=""/> 
+            <br/>
+            <br/>
+            Address: <textarea name="address" placeholder="Enter your address"></textarea>
+            <br/>
+            <br/>
+            Email:
+            <input type="email" name="email"/>
+            <br/>
+            <br/>
+            Password:
+            <input type="password" name="password" maxlength="8"/>
+            <br/>
+            <br/>
+            Age:
+            <input type="number" name="age" min="1" max="50"/> 
+            <br/>
+            <br/>
+            <input type="submit" name=""/>
+            Gender: 
+            <input type="radio" value="M" name="gender" checked=""/> Male 
+            <input type="radio" value="F" name="gender"/> Female 
+            <input type="radio" value="O" name="gender"/> Others 
+            <br/>
+            <br/>
+            Country: 
+            <select>
+                <option> Select a Country </option>
+                <optgroup label="Asia">
+                    <option value="1"> India </option> 
+                    <option value="2"> Japan </option>
+                    <option value="3"> China </option>
+                </optgroup>
+                <optgroup label="North America">
+                    <option value="4"> Canada </option>
+                    <option value="5"> United States </option>
+                </optgroup>
+            </select> 
+            <br/>
+            <br/>
+            Sports:
+            <input type="checkbox" name="Sports[]"/> Basketball
+            <input type="checkbox" name="Sports[]" checked=""/> Football
+            <input type="checkbox" name="Sports[]"/> Hockey 
+            <br/>
+            <br/>
+            Image:
+            <input type="file" name="Image">
+            <br/>
+            <br/>
+            <input type="submit" vlaue="submit" name="submit" id="submit"/>
+        </fieldset>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
